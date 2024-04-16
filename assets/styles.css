@@ -1,5 +1,47 @@
-h1 {
-    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
-    color: transparent;
-    background-clip: text;
+* {  
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline:none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+:root { 
+    --bg-color:#0a3665;
+    --secondary-bg-color: #05360b;
+    --text-color: #17f27d;
+    --main-color: #210fe9;
+
+}
+
+body {  
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.header {   
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    padding: 2rem 16rem;
+    background: rgba(0, 0, 0,0.3);
+    backdrop_filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo {
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3 ease;
+}
+Logo.span { 
+    color: var(--main-color);
+    text-shadow: 0 0 5px var(--main-color);
 }
